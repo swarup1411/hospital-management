@@ -1,0 +1,26 @@
+<odoo>
+<!--    Action for Appointment-->
+    <record id="action_my_appointment_receipt" model="ir.actions.report">
+        <field name="name">Appointment Receipt</field>
+        <field name="model">hospital.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">doctor_appoinment.report_my_appointment_receipt_template</field>
+        <field name="report_file">doctor_appoinment.report_my_appointment_receipt_template</field>
+        <field name="binding_model_id" ref="model_hospital_appointment"/>
+        <field name="paperformat_id" ref="doctor_appoinment.paperformat_my_appointment_receipt"/>
+        <field name="binding_type">report</field>
+    </record>
+<!--    Action for doctor-->
+    <record id="action_my_doctor_receipt" model="ir.actions.report">
+        <field name="name">Doctor Receipt</field>
+        <field name="model">hospital.doctor</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">doctor_appoinment.report_my_doctor_receipt_template</field>
+        <field name="report_file">doctor_appoinment.report_my_doctor_receipt_template</field>
+        <field name="binding_model_id" ref="model_hospital_doctor"/>
+        <field name="paperformat_id" ref="doctor_appoinment.paperformat_my_doctor_receipt"/>
+        <field name="binding_type">report</field>
+    </record>
+
+
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+<!--    Action for Patient pdf view-->
+    <record model="ir.actions.report" id="report_patient_card">
+        <field name="name">Patient Card</field>
+        <field name="model">hospital.patient</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">patient_management.report_patient_details</field>
+        <field name="report_file">patient_management.report_patient_details</field>
+        <field name="paperformat_id" ref="patient_management.paper_report_patient_detail"/>
+        <field name="binding_model_id" ref="model_hospital_patient"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

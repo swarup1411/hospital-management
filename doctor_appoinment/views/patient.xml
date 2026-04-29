@@ -1,0 +1,40 @@
+<odoo>
+<!--    view for hospital.patient model -->
+   <record id="patient_view_form_inherit" model="ir.ui.view">
+        <field name="name">hospital.patient.form.inherit</field>
+        <field name="model">hospital.patient</field>
+        <field name="inherit_id" ref="patient_management.patient_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='address']" position="after">
+                <field name="appointment_count"/>
+            </xpath>
+
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button type="object"
+                            name="action_view_appointments"
+                            class="oe_stat_button"
+                            icon="fa-calendar">
+                        <field name="appointment_count" widget="statinfo"/>
+                    </button>
+                </header>
+            </xpath>
+<!--            <xpath expr="//sheet" position="inside">-->
+<!--                 <field name="appointment_ids">-->
+<!--                    <list>-->
+<!--                        <field name="date"/>-->
+<!--                        <field name="time"/>-->
+<!--                        <field name="state"/>-->
+<!--                        <field name="reason"/>-->
+<!--                        <field name="add_note"/>-->
+<!--                        <field name="appointment_seq"/>-->
+<!--                        <field name="patient_age"/>-->
+<!--                        <field name="doctor_id"/>-->
+<!--                        <field name="doctor_fees"/>-->
+<!--                    </list>-->
+<!--                </field>-->
+<!--            </xpath>-->
+
+        </field>
+    </record>
+</odoo>

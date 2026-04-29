@@ -1,0 +1,9 @@
+<odoo>
+<!--    Sequence for patient-->
+    <record id="seq_patient_seq" model="ir.sequence">
+        <field name="name">patient.seq</field>
+        <field name="code">patient.sequence</field>
+        <field name="prefix">Pat/</field>
+        <field name="padding">3</field>
+    </record>
+</odoo>

@@ -1,0 +1,22 @@
+<odoo>
+<template id="portal_my_home_currency" inherit_id="portal.portal_my_home">
+        <xpath expr="//div[hasclass('o_portal_category')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Exchange</t>
+                <t t-set="text">convert currency</t>
+                <t t-set="url" t-value="'/my/currency-converter'"/>
+<!--                <t t-set="icon" t-value="'/pet_profile_portal/static/src/image/pet.svg'"/>-->
+                <t t-set="config_card" t-value="True"/>
+            </t>
+        </xpath>
+    </template>
+<!--    <template id="portal_currency_menu"-->
+<!--              inherit_id="portal.portal_my_home">-->
+<!--        <xpath expr="//div[@id='portal_my_home']/div" position="inside">-->
+<!--            <a class="list-group-item list-group-item-action"-->
+<!--               href="/my/currency-converter">-->
+<!--                💱 Currency Converter-->
+<!--            </a>-->
+<!--        </xpath>-->
+<!--    </template>-->
+</odoo>

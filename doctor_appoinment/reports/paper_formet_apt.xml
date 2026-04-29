@@ -1,0 +1,26 @@
+<odoo>
+<!--    Paper for Appointment-->
+    <record id="paperformat_my_appointment_receipt" model="report.paperformat">
+        <field name="name">Hospital Receipt Format</field>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">10</field>
+        <field name="margin_left">5</field>
+        <field name="margin_right">5</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+    </record>
+<!--    Paper for doctor-->
+    <record id="paperformat_my_doctor_receipt" model="report.paperformat">
+        <field name="name">Hospital Receipt Format</field>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">10</field>
+        <field name="margin_left">5</field>
+        <field name="margin_right">5</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+    </record>
+</odoo>

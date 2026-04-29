@@ -1,0 +1,34 @@
+<odoo>
+<odoo>
+    <template id="portal_currency_page">
+        <t t-call="portal.portal_layout">
+            <div class="container mt-4">
+                <h3>Currency Converter</h3>
+
+                <input class="fromcurrency form-control"
+                       placeholder="Amount"/>
+
+                <select class="fromcurrencytype form-control mt-2">
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                </select>
+
+                <select class="tocurrencytype form-control mt-2">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
+
+                <input class="tocurrency form-control mt-2"/>
+
+                <button id="convertBtn"
+                        class="btn btn-primary mt-3">
+                    Convert
+                </button>
+            </div>
+
+            <script src="/my_portal_module/static/src/js/currency_converter.js"/>
+        </t>
+    </template>
+</odoo>
+
+</odoo>
